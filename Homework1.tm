@@ -9,7 +9,7 @@
   </author-data>>>
 
   <\description>
-    <item*|1.6>Find a the most probable distributino <math|P<rsub|n>> such
+    <item*|1.6>Find a the most probable distribution <math|P<rsub|n>> such
     that,
 
     <\equation*>
@@ -42,6 +42,26 @@
       S<around*|(|\<alpha\>,\<beta\>,\<gamma\>,<around*|{|P<rsub|in>|}>|)>=In
       \<Omega\><around*|{|P<rsub|n>|}>-\<alpha\><around*|(||)>
     </equation*>
+
+    <item*|1.6-2>For a ideal gas with distribution
+
+    <\equation*>
+      P<around*|(|v|)>=<big|prod><rsub|i=1><rsup|3><sqrt|<frac|m|2
+      \<pi\>\<kappa\><rsub|B>T>>e-<frac|m<around*|(|v<rsub|i>-<wide|v|\<bar\>><rsub|i>|)>|2
+      k<rsub|B>T>
+    </equation*>
+
+    Please find out the state equation
+
+    <item*|2.6-2>For different <math|N=1,10,100,1000>, numerically calculate
+    the following fucntions,
+
+    <\equation*>
+      <big|sum><rsub|n=1><rsup|100>exp<around*|[|N/n<rsup|2>|]>
+    </equation*>
+
+    Compared it with the function <math|exp<around*|[|N|]>> (then <math|n=1>
+    term, the largest term, in the above function), what do you find?
   </description>
 
   \;
