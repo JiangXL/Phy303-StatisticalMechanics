@@ -4,7 +4,9 @@
 
 <\body>
   <doc-data|<doc-title|Homework I>|<doc-author|<\author-data|<author-name|Yuejian
-  Mo>>
+  Mo>|<\author-affiliation>
+    11510511
+  </author-affiliation>>
     \;
   </author-data>>>
 
@@ -52,6 +54,10 @@
       P<rsub|n>=<frac|1|<sqrt|2\<pi\><around*|(|n<rsub|d><rsup|2>-n<rsub|a><rsup|2>|)>>>e<rsup|-<frac|<around*|(|n-n<rsub|a>|)><rsup|2>|2<around*|(|n<rsub|d><rsup|2>-n<rsub|a><rsup|2>|)>>>
     </equation*>
 
+    <\equation*>
+      <with|color|red|P<rsub|n>=<frac|N|<sqrt|2\<pi\><around*|(|n<rsub|d><rsup|2>-n<rsub|a><rsup|2>|)>>>e<rsup|-<frac|<around*|(|n-n<rsub|a>|)><rsup|2>|2<around*|(|n<rsub|d><rsup|2>-n<rsub|a><rsup|2>|)>>>>
+    </equation*>
+
     \;
 
     <item*|1.6-2>For a ideal gas with distribution
@@ -66,11 +72,13 @@
 
     <with|font-series|bold|Solve>:
 
+    <with|color|green|energy may not equated in each direction>
+
     We known\ 
 
     <\equation*>
-      <tabular|<tformat|<table|<row|<cell|P>|<cell|=>|<cell|<frac|N|V><frac|1|3>m
-      <wide|v<rsup|2>|\<bar\>>>>>>>
+      <tabular|<tformat|<table|<row|<cell|P>|<cell|=>|<cell|<frac|F|A>=>>|<row|<cell|P>|<cell|=>|<cell|<frac|N|V><frac|1|3>m
+      <wide|v<rsup|2>|\<bar\>>>>|<row|<cell|>|<cell|>|<cell|>>>>>
     </equation*>
 
     Then, get the <math|<wide|v<rsup|2>|\<bar\>>> from distribution.\ 
@@ -94,37 +102,7 @@
       V>|<cell|=>|<cell|N <around*|(|k<rsub|B>T+m <wide|v|\<bar\>>|)>>>>>>
     </equation*>
 
-    <item*|2.6-1>At time <math|t<rsub|n>>, the <with|font-shape|italic|stock
-    price> of a certain stcck is <math|P<rsub|n>>. Then the
-    <with|font-shape|italic|return> of such stock at time <math|t<rsub|n>> is
-    defined as,
-
-    <\equation*>
-      r<rsub|n>=In<frac|P<rsub|n>|P<rsub|n>-1>\<approx\><frac|P<rsub|n>|P<rsub|n>-1>-1
-    </equation*>
-
-    We don't know the distribution of <math|r<rsub|n>>, but we know that
-    <math|r<rsub|n>> are independent of each other and that
-
-    <\equation*>
-      <tabular|<tformat|<cwith|1|1|1|1|cell-halign|r>|<table|<row|<cell|\<less\>r<rsub|n>\<gtr\>>|<cell|=>|<cell|\<mu\>>>|<row|<cell|\<less\>r<rsub|n><rsup|2>\<gtr\>-\<less\>r<rsub|n>\<gtr\><rsup|2>>|<cell|=>|<cell|\<sigma\><rsup|2>>>>>>
-    </equation*>
-
-    Use the central limit theorem to calculate the distribution of stock
-    price at <math|t<rsub|N>> when <math|N> is very large.(Hint: Calculate
-    the distribution of <math|R<rsub|N>> defined as
-
-    <\equation*>
-      R<rsub|N>=In<frac|P<rsub|N>|P<rsub|0>>=In<frac|P<rsub|N>|P<rsub|N-1>>
-      <frac|P<rsub|N-1>|P<rsub|N-2>> \<cdots\><frac|P<rsub|2>|P<rsub|1>>
-      <frac|P<rsub|1>|P<rsub|0>>=<big|sum><rsub|n=1><rsup|N>r<rsub|n>
-    </equation*>
-
-    And then get <math|P<rsub|N>=P<rsub|0> exp<around*|(|R<rsub|N>|)>>.)
-
-    <\with|font-series|bold>
-      Solve:
-    </with>
+    \;
 
     <item*|2.6-2>Find a the most probable distribution
     <math|P<around*|(|x|)>> such that,
@@ -199,6 +177,8 @@
       P<around*|(|E|)>=C \<Omega\><around*|(|E|)>exp<around*|(|-\<beta\>E|)>
     </equation*>
 
+    \ 
+
     where <math|C> is the normalization constant and
     <math|\<Omega\><around*|(|E|)>> is the number of microsates with enery
     <math|E>. Both <math|In\<Omega\><around*|(|E|)>> and <math|E> are of the
@@ -216,7 +196,7 @@
       <math|\<delta\>E=E-E<rsub|0>>. Formular
       <math|S<around*|(|E|)>=\<kappa\><rsub|B>In\<Omega\><around*|(|E|)>>,
       <math|\<partial\>E/\<partial\>S=T>,
-      <math|\<partial\>E/\<partial\>T=C<rsub|V>>,
+      <math|\<partial\>E/\<partial\>T=C<rsub|v>>,
       <math|E<rsub|0>=3N\<kappa\><rsub|B>T/2> and
       <math|C<rsub|v>=3N\<kappa\><rsub|B>/2> are needed in this calculation.
     </description>
@@ -226,13 +206,14 @@
     </with>
 
     <\description>
-      <item*|1)>
+      <item*|1)>Try to calculate the mean and variance to show
+      <math|P<around*|(|E|)>> is narraow distribution.
 
       <\equation*>
         <tabular|<tformat|<table|<row|<cell|<big|int>E P<around*|(|E|)> d
         E>|<cell|=>|<cell|<big|int>E C \<Omega\><around*|(|E|)>exp<around*|(|-\<beta\>E|)>d
         E>>|<row|<cell|>|<cell|=>|<cell|C<big|int>exp<around*|(|ln\<Omega\><around*|(|E|)>+In
-        E-\<beta\>E|)>d E>>|<row|<cell|>|<cell|\<cong\>>|<cell|C<sqrt|<frac|2\<pi\>|>>>>>>>
+        E-\<beta\>E|)>d E>>|<row|<cell|>|<cell|\<cong\>>|<cell|>>>>>
       </equation*>
 
       <\equation*>
@@ -244,7 +225,35 @@
         E>>|<row|<cell|>|<cell|=>|<cell|>>>>>
       </equation*>
 
-      \;
+      <\with|color|dark blue>
+        \<#8BBE\> <math|E<rsub|0>> \<#662F\>\<#6781\>\<#5927\>\<#503C\>\<#FF0C\>\<#5C06\>
+        <math|In<around*|(|P|)>> \<#5728\> <math|E<rsub|0><rsub|>>
+        \<#5904\>\<#5C55\>\<#5F00\>\<#FF0C\>
+
+        <\equation*>
+          <tabular|<tformat|<table|<row|<cell|In P<around*|(|E|)>=In
+          P<around*|(|E<rsub|0>|)>-<around*|(|E-E<rsub|0>|)><frac|\<partial\>In
+          P<around*|(|E<rsub|>|)>|\<partial\>E><mid|\|><rsub|E<rsub|0>>+<frac|1|2><around*|(|E-E<rsub|0>|)><rsup|2><frac|\<partial\><rsup|2>In
+          P<around*|(|E|)>|\<partial\>E<rsup|2>><mid|\|><rsub|E<rsub|0>>>>|<row|<cell|In
+          P<around*|(|E|)>=In P<around*|(|E<rsub|0>|)>+<frac|1|2>\<delta\>E<rsup|2><frac|\<partial\><rsup|2>In
+          P<around*|(|E|)>|\<partial\>E<rsup|2>><mid|\|><rsub|E<rsub|0>>>>|<row|<cell|<tabular|<tformat|<table|<row|<cell|<frac|\<partial\>In
+          P<around*|(|E|)>|\<partial\>E>>|<cell|=<frac|\<partial\><around*|(|C\<Omega\><around*|(|E|)>exp<around*|(|-\<beta\>E|)>|)>|\<partial\>E>=C<frac|\<partial\><around*|(|exp<around*|(|-\<beta\>E+In
+          \<Omega\><around*|(|E|)>|)>|)>|\<partial\>E>>>|<row|<cell|>|<cell|=C<around*|(|-\<beta\>+<frac|\<partial\>In
+          \<Omega\><around*|(|E|)>|\<partial\>E>|)>exp<around*|(|-\<beta\>E+In
+          \<Omega\><around*|(|E|)>|)>>>|<row|<cell|<frac|\<partial\><rsup|2>In
+          P<around*|(|E|)>|\<partial\>E<rsup|2>>>|<cell|=C<around*|(|<frac|\<partial\><rsup|2>In
+          \<Omega\><around*|(|E|)>|\<partial\>E<rsup|2>>|)>exp<around*|(|-\<beta\>E+In
+          \<Omega\><around*|(|E|)>|)>+C<around*|(|-\<beta\>+<frac|\<partial\>In
+          \<Omega\><around*|(|E|)>|\<partial\>E>|)><rsup|2>exp<around*|(|-\<beta\>E+In
+          \<Omega\><around*|(|E|)>|)>>>|<row|<cell|>|<cell|=C<around*|(|<frac|\<partial\><rsup|2>In
+          \<Omega\><around*|(|E|)>|\<partial\>E<rsup|2>>+<around*|(|-\<beta\>+<frac|\<partial\>In
+          \<Omega\><around*|(|E|)>|\<partial\>E>|)><rsup|2>|)>exp<around*|(|-\<beta\>E+In
+          \<Omega\><around*|(|E|)>|)>>>|<row|<cell|>|<cell|=???>>|<row|<cell|>|<cell|=<frac|1|\<kappa\><rsub|B>><frac|\<partial\>|\<partial\>E><around*|(|<frac|1|T>|)>=<frac|-1|\<kappa\><rsub|B>T<rsup|2>><frac|\<partial\>T|\<partial\>E>=<frac|-2|\<kappa\><rsub|B>T<rsup|2>
+          3N\<kappa\><rsub|B>>=<frac|-2|3\<kappa\><rsub|B><rsup|2>T<rsup|2>>>>|<row|<cell|\<Rightarrow\>>|<cell|>>|<row|<cell|In
+          P<around*|(|E|)>>|<cell|=In P<around*|(|E<rsub|0>|)>+\<delta\>E<rsup|2><frac|1|2><frac|-2|3\<kappa\><rsub|B><rsup|2>T<rsup|2>>=In
+          P<around*|(|E<rsub|0>|)>-\<delta\>E<rsup|2><frac|1|3\<kappa\><rsub|B><rsup|2>T<rsup|2>>>>|<row|<cell|P<around*|(|E|)>>|<cell|=P<around*|(|E<rsub|0>|)>e<rsup|-<frac|\<delta\>E<rsup|2>|3\<kappa\><rsub|B><rsup|2>T<rsup|2>>>=P<around*|(|E<rsub|0>|)>e<rsup|-<frac|<around*|(|E-E<rsub|0>|)><rsup|2>|3\<kappa\><rsub|B<rsup|2>T<rsup|2>>>>>>>>>>>>>>
+        </equation*>
+      </with>
 
       \;
 
@@ -252,7 +261,13 @@
 
       <\equation*>
         <tabular|<tformat|<table|<row|<cell|<big|int><rsub|0><rsup|10<rsup|-6>E<rsub|0>>P<around*|(|E|)>d
-        E>|<cell|=>|<cell|>>|<row|<cell|>|<cell|>|<cell|>>>>>
+        E>|<cell|=>|<cell|>>>>>
+      </equation*>
+
+      \;
+
+      <\equation*>
+        <with|color|dark blue|<tabular|<tformat|<table|<row|<cell|\<delta\>E=10<rsup|-6>E<rsub|0>>>|<row|<cell|<frac|P<around*|(|E|)>|P<around*|(|E<rsub|0>|)>>=e<rsup|-<frac|10<rsup|-6>E<rsub|0>|3\<kappa\><rsub|B><rsup|2>T<rsup|2>>>=???=<frac|1|e<rsup|10<rsup|9>>>>>>>>>
       </equation*>
     </description>
   </description>
