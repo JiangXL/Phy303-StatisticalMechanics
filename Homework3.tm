@@ -1,4 +1,4 @@
-<TeXmacs|1.99.8>
+<TeXmacs|1.99.7>
 
 <style|<tuple|generic|old-spacing>>
 
@@ -21,17 +21,6 @@
       <item>The ceiling is chosen as the reference point of the poetical
       energy, if the mass is L away from the ceiling, what is the entropy of
       this system?
-
-      <item>If the temperature of the system is T, what is the length of L as
-      a function of T?
-
-      <item>What is the free energy of the system at T?
-    </enumerate>
-
-    <with|font-series|bold|Solve:>
-
-    <\enumerate>
-      <item>What is entropy(cal it by microstate first?)
 
       Assume that a link can be up or down independently. The partition
       function is the product of the partition functions of individual links.
@@ -66,7 +55,8 @@
         k<rsub|B>In<around*|(|2cosh\<beta\>m g a|)>>>>>>
       </equation*>
 
-      <item>
+      <item>If the temperature of the system is T, what is the length of L as
+      a function of T?
 
       <\equation*>
         <tabular|<tformat|<table|<row|<cell|<tabular|<tformat|<table|<row|<cell|E>|<cell|=>|<cell|-<frac|\<partial\>In
@@ -83,10 +73,14 @@
         a|)>>>>|<row|<cell|>|<cell|=>|<cell|>>>>>>>>>>
       </equation*>
 
-      <item><math|<tabular|<tformat|<table|<row|<cell|F<around*|(|T,N|)>>|<cell|=>|<cell|-k<rsub|B>T
+      <item>What is the free energy of the system at T?
+
+      <math|<tabular|<tformat|<table|<row|<cell|F<around*|(|T,N|)>>|<cell|=>|<cell|-k<rsub|B>T
       In Z>>|<row|<cell|>|<cell|=>|<cell|-N k<rsub|B>T
       In<around*|(|e<rsup|-\<beta\> m g a>+e<rsup|\<beta\>m g a>|)>>>>>>>
     </enumerate>
+
+    \;
 
     <item><with|font-shape|italic|Relativistic particles: N indistinguishable
     >relativistic particles move in <with|font-shape|italic|one dimension>
@@ -107,6 +101,10 @@
       the available volume in phase space
       <math|\<Omega\><around*|(|E,L,N|)>>.
 
+      Each of <math|N> coordinates explore a length <math|L>, for an overall
+      contribution <math|L<rsup|N>/N!>. Division by <math|N!> ensure no
+      over-counting of phase space for indistinguished particles.
+
       <item>Compute the contribution of the momenta <math|p<rsub|i>> to
       <math|\<Omega\><around*|(|E,L,N|)>>.(<with|font-shape|italic|Hint.> The
       volume of the hyperyramid defined by
@@ -114,31 +112,101 @@
       <math|x<rsub|i>\<geqslant\>0>, in <math|d> dimensions is
       <math|R<rsup|d>/d!.>)
 
+      The <math|N> momenta satify the constraint
+      <math|<big|sum><rsub|i=1><rsup|N><around*|\||p<rsub|i>|\|>=<frac|E|c>>.
+      For a particular choice of the signs of <math|<around*|{|p<rsub|i>|}>>,
+      this constrain describes the surface of a hyper pramid in <math|N>
+      dimensions. If we ignore the difference between the surface area and
+      volume in the large <math|N> limit, we can calculate the volume in
+      momentum space from the experssion given in the hits as
+
+      <\equation*>
+        \<Omega\><rsub|p>=2<rsup|N>\<cdot\><frac|1|N!>\<cdot\><around*|(|<frac|E|c>|)><rsup|N>.
+      </equation*>
+
+      The factor of <math|2<rsup|N>> takes into account the two possible
+      signs for each <math|p<rsub|i>>. The surface area of pyramid is given
+      by <math|<sqrt|d>R<rsup|d-1>/<around*|(|d-1|)>!>; the additional factor
+      of <math|<sqrt|d>> with respect to <math|d volume/d R> is the ratio of
+      the normal to the base to the side of the pyramid. Thus, the volume of
+      a shell of energy uncertainty <math|\<Delta\><rsub|E>>, is
+
+      <\equation*>
+        \<Omega\><rsub|p><rsup|<rprime|'>>=2<rsup|N>\<cdot\><frac|<sqrt|N>|<around*|(|N-1|)>!>\<cdot\><around*|(|<frac|E|c>|)><rsup|N-1>\<cdot\><frac|\<Delta\><rsub|E>|c>
+      </equation*>
+
+      We can use the two experssion interchangeably, as their difference is
+      subleading in <math|N>
+
       <item>Compute the entropy <math|S<around*|(|E,L,N|)>>.
+
+      Taking into account quantum modifications due to indistinguishability,
+      and phase space measure, we have
+
+      <\equation*>
+        \<Omega\><around*|(|E,L,N|)>=<frac|1|h<rsup|N>>\<cdot\><frac|L<rsup|N>|N!>\<cdot\>2<rsup|N>\<cdot\><frac|<sqrt|N>|<around*|(|N-1|)>!>\<cdot\><around*|(|<frac|E|c>|)><rsup|N-1>\<cdot\><frac|\<Delta\><rsub|E>|c>
+      </equation*>
+
+      Ignoring subleading terms in the large <math|N> limit, the entropy is
+      given by
+
+      <\equation*>
+        S<around*|(|E,L,N|)>=N k<rsub|B>In<around*|(|<frac|2e<rsup|2>|h
+        c>\<cdot\><frac|L|N>\<cdot\><frac|E|N>|)>
+      </equation*>
 
       <item>Calculate the one-dimensional pressure <math|P>
 
+      From <math|d E=T dS-P d V+\<mu\>d N>, the pressure is given by
+
+      <\equation*>
+        P=T<frac|\<partial\>S|\<partial\>L><mid|\|><rsub|E,N>=<frac|N
+        k<rsub|B>T|L>
+      </equation*>
+
       <item>Obtain the heat capacities <math|C<rsub|L>> and <math|C<rsub|P>>.
+
+      Temperature and energy are related by
+
+      <\equation*>
+        <frac|1|T>=<frac|\<partial\>S|\<partial\>E><mid|\|><rsub|L,N>=<frac|N
+        k<rsub|B>|E>,\<Longrightarrow\>E=N
+        k<rsub|B>T,\<Longrightarrow\>C<rsub|L>=<frac|\<partial\>E|\<partial\>T>\|<rsub|L,N>=N
+        k<rsub|B>
+      </equation*>
+
+      Including the work done against external pressure, and using the
+      equation of state,
+
+      <\equation*>
+        C<rsub|P>=<frac|\<partial\>E|\<partial\>T>\|<rsub|P,N>+P<frac|\<partial\>L|\<partial\>T>\|<rsub|P,N>=2N
+        k<rsub|B>
+      </equation*>
 
       <item>What is the probablity <math|p<around*|(|p<rsub|1>|)>> of finding
       a particle with momentum <math|p<rsub|1>>
-    </enumerate>
 
-    <with|font-series|bold|Sovle:>
+      Having fixed <math|p<rsub|1>> for the first particle, the remaining
+      <math|N-1> particles are left to share an energy of
+      <math|<around*|(|E-c\|p<rsub|1>|)>>. Since we are not interested in the
+      coordinates, we can get the probability from the ratio of phase space
+      for the momenta, that is
 
-    <\enumerate>
-      <item>Integer all the other except <math|q<rsub|i>>
+      <\equation*>
+        <tabular|<tformat|<table|<row|<cell|p<around*|(|p<rsub|1>|)>>|<cell|=<frac|\<Omega\><rsub|p><around*|(|E-c<around*|\||p<rsub|1><around*|\|||\<nobracket\>>,N-1|\<nobracket\>>|)>|\<Omega\><rsub|p><around*|(|E,N|)>>>>|<row|<cell|>|<cell|=<around*|[|<frac|2<rsup|N-1>|<around*|(|N-1|)>!>\<cdot\><around*|(|<frac|E-c<around*|\||p<rsub|1>|\|>|c>|)><rsup|N-1>|]>\<times\><around*|[|<frac|N!|2<rsup|N>>\<cdot\><around*|(|<frac|c|E>|)><rsup|N>|]>>>|<row|<cell|>|<cell|\<approx\><frac|c
+        N|2E>\<cdot\><around*|(|1-<frac|c<around*|\||p<rsub|1>|\|>|E>|)><rsup|N>\<approx\><frac|c
+        N|2E>\<cdot\>exp<around*|(|-<frac|c<around*|\||p<rsub|1>|\|>|E>|)>>>>>>
+      </equation*>
 
-      <item>Integer all the other except <math|p<rsub|i>>
+      Substituting <math|E=N k<rsub|B>T>, we obtain the (properly normalized)
+      Boltzmann weight
 
-      <item>From hamiltonian get S
+      <\equation*>
+        p<around*|(|p<rsub|1>|)>=<frac|c|2
+        k<rsub|B>T>\<cdot\>exp<around*|(|-<frac|c<around*|\||p<rsub|1>|\|>|k<rsub|B>T>|)>
+      </equation*>
 
-      <item>From Maxwell relation to get <math|P>
-
-      <item>From Maxwell relation to get <math|C<rsub|p>> and
-      <math|C<rsub|L>>
-
-      <item>Do integer with limit up border and down border
+      (refer from Mehran Karder book)
     </enumerate>
 
     \;
