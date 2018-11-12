@@ -251,7 +251,7 @@
           \<Omega\><around*|(|E|)>|)>>>|<row|<cell|>|<cell|=???>>|<row|<cell|>|<cell|=<frac|1|\<kappa\><rsub|B>><frac|\<partial\>|\<partial\>E><around*|(|<frac|1|T>|)>=<frac|-1|\<kappa\><rsub|B>T<rsup|2>><frac|\<partial\>T|\<partial\>E>=<frac|-2|\<kappa\><rsub|B>T<rsup|2>
           3N\<kappa\><rsub|B>>=<frac|-2|3\<kappa\><rsub|B><rsup|2>T<rsup|2>>>>|<row|<cell|\<Rightarrow\>>|<cell|>>|<row|<cell|In
           P<around*|(|E|)>>|<cell|=In P<around*|(|E<rsub|0>|)>+\<delta\>E<rsup|2><frac|1|2><frac|-2|3\<kappa\><rsub|B><rsup|2>T<rsup|2>>=In
-          P<around*|(|E<rsub|0>|)>-\<delta\>E<rsup|2><frac|1|3\<kappa\><rsub|B><rsup|2>T<rsup|2>>>>|<row|<cell|P<around*|(|E|)>>|<cell|=P<around*|(|E<rsub|0>|)>e<rsup|-<frac|\<delta\>E<rsup|2>|3\<kappa\><rsub|B><rsup|2>T<rsup|2>>>=P<around*|(|E<rsub|0>|)>e<rsup|-<frac|<around*|(|E-E<rsub|0>|)><rsup|2>|3\<kappa\><rsub|B<rsup|2>T<rsup|2>>>>>>>>>>>>>>
+          P<around*|(|E<rsub|0>|)>-\<delta\>E<rsup|2><frac|1|3\<kappa\><rsub|B><rsup|2>T<rsup|2>>>>|<row|<cell|P<around*|(|E|)>>|<cell|=P<around*|(|E<rsub|0>|)>e<rsup|-<frac|\<delta\>E<rsup|2>|3k<rsub|B><rsup|2>T<rsup|2>>>=P<around*|(|E<rsub|0>|)>e<rsup|-<frac|<around*|(|E-E<rsub|0>|)><rsup|2>|<rsub|3k<rsub|B><rsup|2>T<rsup|2>>>>>>>>>>>>>>
         </equation*>
       </with>
 
@@ -267,7 +267,7 @@
       \;
 
       <\equation*>
-        <with|color|dark blue|<tabular|<tformat|<table|<row|<cell|\<delta\>E=10<rsup|-6>E<rsub|0>>>|<row|<cell|<frac|P<around*|(|E|)>|P<around*|(|E<rsub|0>|)>>=e<rsup|-<frac|10<rsup|-6>E<rsub|0>|3\<kappa\><rsub|B><rsup|2>T<rsup|2>>>=???=<frac|1|e<rsup|10<rsup|9>>>>>>>>>
+        <with|color|dark blue|<tabular|<tformat|<table|<row|<cell|\<delta\>E=10<rsup|-6>E<rsub|0>>>|<row|<cell|<frac|P<around*|(|E|)>|P<around*|(|E<rsub|0>|)>>=e<rsup|-<frac|10<rsup|-6>E<rsub|0>|3k<rsub|B><rsup|2>T<rsup|2>>>=<frac|1|e<rsup|10<rsup|11>>>,<around*|(|N\<approx\>10<rsup|23>|)>>>>>>>
       </equation*>
     </description>
   </description>
